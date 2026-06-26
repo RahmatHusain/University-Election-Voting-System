@@ -88,4 +88,32 @@ def view_candidates():
 
         print("-" * 30)
 
-        
+def admin_menu():
+
+    while True:
+
+        print("\n===== ADMIN MENU =====")
+
+        print("1. Register Candidate")
+
+        print("2. View Candidates")
+
+        print("3. Logout")
+
+        choice = input("Choose: ")
+
+        if choice == "1":
+
+            register_candidate()
+
+        elif choice == "2":
+
+            view_candidates()
+
+        elif choice == "3":
+
+            break
+
+        else:
+
+            print("Invalid Choice")
