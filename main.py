@@ -45,3 +45,25 @@ def admin_login():
     print("❌ Invalid Credentials")
 
     return False
+
+def register_candidate():
+
+    candidates = load_candidates()
+
+    name = input("Candidate Name: ")
+
+    department = input("Department: ")
+
+    candidates.append({
+
+        "name": name,
+
+        "department": department,
+
+        "votes": 0
+
+    })
+
+    save_candidates(candidates)
+
+    print("✅ Candidate Registered")
