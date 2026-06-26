@@ -99,7 +99,7 @@ Password:
 ```json
 [
     {
-        "name": "John Doe",
+        "name": "Rahmat Husain",
         "department": "Computer Science",
         "votes": 0
     },

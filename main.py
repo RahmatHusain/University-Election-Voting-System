@@ -111,12 +111,12 @@ def admin_menu():
             view_candidates()
 
         elif choice == "3":
-
+            
             break
 
         else:
 
             print("Invalid Choice")
-            
+
 if admin_login():
     admin_menu()
