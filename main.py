@@ -24,3 +24,8 @@ def load_candidates():
             return []
 
     return []
+
+def save_candidates(candidates):
+
+    with open(CANDIDATE_FILE, "w") as file:
+        json.dump(candidates, file, indent=4)
