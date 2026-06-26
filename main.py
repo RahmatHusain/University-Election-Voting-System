@@ -117,3 +117,6 @@ def admin_menu():
         else:
 
             print("Invalid Choice")
+            
+if admin_login():
+    admin_menu()
