@@ -67,3 +67,25 @@ def register_candidate():
     save_candidates(candidates)
 
     print("✅ Candidate Registered")
+
+def view_candidates():
+
+    candidates = load_candidates()
+
+    if not candidates:
+
+        print("No Candidates Registered.")
+
+        return
+
+    print("\nRegistered Candidates\n")
+
+    for candidate in candidates:
+
+        print(f"Name: {candidate['name']}")
+
+        print(f"Department: {candidate['department']}")
+
+        print("-" * 30)
+
+        
