@@ -29,3 +29,19 @@ def save_candidates(candidates):
 
     with open(CANDIDATE_FILE, "w") as file:
         json.dump(candidates, file, indent=4)
+
+def admin_login():
+
+    username = input("Username: ")
+
+    password = getpass.getpass("Password: ")
+
+    if username == ADMIN_USERNAME and password == ADMIN_PASSWORD:
+
+        print("✅ Login Successful")
+
+        return True
+
+    print("❌ Invalid Credentials")
+
+    return False
