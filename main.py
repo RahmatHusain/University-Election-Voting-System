@@ -5,6 +5,7 @@ print("===================================")
 import json
 import os
 import getpass
+import hashlib
 
 CANDIDATE_FILE = "candidates.json"
 
